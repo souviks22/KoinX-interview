@@ -9,7 +9,7 @@ import Sentiment from "@/components/sentiment/Sentiment"
 import Bitcoin from "@/components/about/Bitcoin"
 
 export default function Home() {
-  return (<main className="min-h-screen p-2 sm:p-10">
+  return (<main className="min-h-screen px-3 py-16 sm:px-10 sm:py-20">
     <Head>
       <title>KoinX Interview</title>
     </Head>
