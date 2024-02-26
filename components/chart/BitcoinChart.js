@@ -19,7 +19,7 @@ const BitcoinChart = () => {
         fetchCurrentPrice().catch(console.error)
     }, [])
 
-    return (<div className="bg-white p-5 rounded-xl mb-2">
+    return (<div className="bg-white p-5 rounded-xl">
         <div className="flex items-center mb-10">
             <span>
                 <Image src={'/Bitcoin.png'} alt="Bitcoin" height={30} width={30} />

@@ -28,15 +28,15 @@ const Sentiment = () => {
                     </section>
                     <div className="flex flex-col space-y-4 mt-1">
                         <section className="flex items-center">
-                            <div className="block h-1 bg-[#14B079] w-[300px] rounded" />
+                            <div className="block h-1 bg-[#14B079] w-[76px] sm:w-[300px] rounded" />
                             <span className="text-xs px-2">76%</span>
                         </section>
                         <section className="flex items-center">
-                            <div className="block h-1 bg-[#C7C8CE] w-[32px] rounded" />
+                            <div className="block h-1 bg-[#C7C8CE] w-[8px] sm:w-[32px] rounded" />
                             <span className="text-xs px-2">8%</span>
                         </section>
                         <section className="flex items-center">
-                            <div className="block h-1 bg-[#F7324C] w-[64px] rounded" />
+                            <div className="block h-1 bg-[#F7324C] w-[16px] sm:w-[64px] rounded" />
                             <span className="text-xs px-2">16%</span>
                         </section>
                     </div>
