@@ -18,15 +18,15 @@ const TrendingCoins = () => {
         fetchTrendingCoins().catch(console.error)
     }, [])
 
-    return (<div className="bg-white rounded-md p-5">
-        <p className="text-xl font-bold mb-5">Trending Coins (24h)</p>
+    return (<div className="bg-white rounded-md space-y-5 p-5">
+        <p className="text-xl font-semibold mb-5">Trending Coins (24h)</p>
         {trendingCoins.map((coin, i) =>
-            <div key={i} className="w-full flex justify-between mt-5">
+            <div key={i} className="w-full flex justify-between">
                 <section className="text-sm flex items-center">
                     <Image src={coin.item.thumb} alt="coin" width={20} height={20} />
                     <span className="px-2">{`${coin.item.name} (${coin.item.symbol})`}</span>
                 </section>
-                <div className={`text-xs flex items-center p-0.5 ml-5 mr-2 rounded ${coin.item.data.price_change_percentage_24h.usd < 0 ? 'bg-red-200 text-red-600' : 'bg-[#EBF9F4] text-[#14B079]'}`}>
+                <div className={`text-xs flex items-center p-0.5 ml-5 mr-2 rounded ${coin.item.data.price_change_percentage_24h.usd < 0 ? 'bg-red-200 text-[#F7324C]' : 'bg-[#EBF9F4] text-[#14B079]'}`}>
                     <span className="px-1">{coin.item.data.price_change_percentage_24h.usd < 0 ? <AiFillCaretDown /> : <AiFillCaretUp />}</span>
                     <span>{`${coin.item.data.price_change_percentage_24h.usd.toFixed(2)}%`}</span>
                 </div>
