@@ -19,10 +19,12 @@ const Bitcoin = () => {
             <section className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 space-x-0 sm:space-x-5">
                 <div className="relative w-full flex items-center">
                     <Image src={'/Background1.png'} className="rounded-md" width={500} height={200} />
-                    <div className="absolute left-3 flex">
-                        <Image src={'/Phone1.png'} className="rounded-md" width={115} height={115} />
+                    <div className="absolute flex">
+                        <section className="w-2/5 px-2">
+                            <Image src={'/Phone1.png'} className="w-full h-full rounded-md" width={150} height={150} />
+                        </section>
                         <section>
-                            <p className="text-white text-xl font-semibold px-5 mt-1 mb-2">Calculate your Profits</p>
+                            <p className="text-white text-xl font-semibold px-5 mb-2 sm:my-2">Calculate your Profits</p>
                             <button className="flex items-center bg-white px-2 py-1 mx-5 rounded-md">
                                 <span className="text-xs font-semibold">Check Now</span>
                                 <span className="pl-2"><AiOutlineArrowRight /></span>
@@ -32,10 +34,12 @@ const Bitcoin = () => {
                 </div>
                 <div className="relative w-full flex items-center">
                     <Image src={'/Background2.png'} className="rounded-md" width={500} height={200} />
-                    <div className="absolute left-3 flex">
-                        <Image src={'/Phone2.png'} className="rounded-md" width={115} height={115} />
+                    <div className="absolute flex">
+                        <section className="w-2/5 px-2">
+                            <Image src={'/Phone2.png'} className="w-full h-full rounded-md" width={150} height={150} />
+                        </section>
                         <section>
-                            <p className="text-white text-xl font-semibold px-5 mt-1 mb-2">Calculate your tax liability</p>
+                            <p className="text-white text-xl font-semibold px-5 mb-2 sm:my-2">Calculate your Profits</p>
                             <button className="flex items-center bg-white px-2 py-1 mx-5 rounded-md">
                                 <span className="text-xs font-semibold">Check Now</span>
                                 <span className="pl-2"><AiOutlineArrowRight /></span>
