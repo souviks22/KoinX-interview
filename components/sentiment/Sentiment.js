@@ -20,7 +20,7 @@ const Sentiment = () => {
                 <aside className="h-28 w-28 flex justify-center items-center text-4xl font-semibold bg-[#EBF9F4] text-[#14B079] rounded-full">
                     76<span className="text-lg">%</span>
                 </aside>
-                <div className="flex py-3 ml-10">
+                <div className="flex py-3 sm:ml-10">
                     <section className="flex flex-col space-y-3">
                         <span className="text-sm px-5">Buy</span>
                         <span className="text-sm px-5">Hold</span>

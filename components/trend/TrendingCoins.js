@@ -26,7 +26,7 @@ const TrendingCoins = () => {
                     <Image src={coin.item.thumb} alt="coin" width={20} height={20} />
                     <span className="px-2">{`${coin.item.name} (${coin.item.symbol})`}</span>
                 </section>
-                <div className={`text-xs flex items-center p-0.5 ml-5 mr-2 rounded ${coin.item.data.price_change_percentage_24h.usd < 0 ? 'bg-red-200 text-[#F7324C]' : 'bg-[#EBF9F4] text-[#14B079]'}`}>
+                <div className={`h-fit text-xs flex items-center p-0.5 ml-5 mr-2 rounded ${coin.item.data.price_change_percentage_24h.usd < 0 ? 'bg-red-200 text-[#F7324C]' : 'bg-[#EBF9F4] text-[#14B079]'}`}>
                     <span className="px-1">{coin.item.data.price_change_percentage_24h.usd < 0 ? <AiFillCaretDown /> : <AiFillCaretUp />}</span>
                     <span>{`${coin.item.data.price_change_percentage_24h.usd.toFixed(2)}%`}</span>
                 </div>

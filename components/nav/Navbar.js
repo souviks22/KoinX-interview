@@ -20,7 +20,7 @@ const Navbar = () => {
         return () => window.removeEventListener('resize', resizeHandler)
     }, [])
 
-    return (<nav className="w-full fixed bg-white flex flex-col sm:flex-row justify-between items-center p-3 sm:px-10 shadow-sm">
+    return (<nav className="w-full fixed z-10 bg-white flex flex-col sm:flex-row justify-between items-center p-3 sm:px-10 shadow-sm">
         <div className="w-full flex justify-between">
             <Image src={'/KoinX.png'} alt="KoinX" className="h-fit" width={100} height={100} />
             {isMobile && <span className="text-xl" onClick={toggleHandler}>{isClosed ? <AiOutlineMenu /> : <AiOutlineClose />}</span>}
